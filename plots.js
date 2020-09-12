@@ -29,7 +29,7 @@ function init() {
       var PANEL = d3.select("#sample-metadata");
   
       PANEL.html("");
-      Object.entries(data).forEach(([key, value]) =>
-      console.log(key + ': ' + value));
-});
-  }
+      PANEL.append("h6").text(result.location);
+  });
+}
+
